@@ -1,0 +1,78 @@
+<html>
+<title>Kalkulator Sederhana</title>
+<SCRIPT LANGUAGE="JavaScript">
+window.defaultStatus="Support by http://urngsundapinter.blogspot.com"
+function tambah()
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=a+b
+form.hasil.value = c
+}
+
+function kurang()
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=a-b
+form.hasil.value=c
+}
+
+function kali()
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=a*b
+form.hasil.value=c
+}
+
+function bagi()
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=a/b
+form.hasil.value = c
+}
+
+function pangkat()
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=Math.pow(a, b)
+form.hasil.value = c
+}
+
+function kosong()
+{
+form.a.focus()
+form.a.value=""
+form.b.value=""
+form.hasil.value=""
+
+}
+
+</SCRIPT>
+<body onload=kosong()>
+<CENTER>
+<font size="5">Kalkulator sederhana</font>
+<hr size="5" color="black">
+<FORM name="form">
+<pre>
+Angka 1 <input type="text" name="a">
+Angka 2 <input type="text" name="b">
+Hasil <input type "text" name="hasil" disabled="true">
+</pre>
+<input type="button" value=" + " onClick="tambah()">
+<input type="button" value=" - " onClick="kurang()">
+<input type="button" value=" x " onClick="kali()">
+<input type="button" value=" / " onClick="bagi()">
+<input type="button" value=" ^ " onClick="pangkat()"><br>
+<input type="button" value="Clear " onClick="kosong()">
+</br>
+<hr size="2" color="black">
+Oleh: shalih syammary<br>
+</FORM>
+</CENTER>
+
+</body>
+</html>
